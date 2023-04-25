@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video Filters</title>
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <main>
+     <div class="app">
+            <div class="main_container">
+                <video id="video" class="video" autoplay muted></video>
+                <div class="select_options">
+                    <div class="items_opitons">                                               
+                        <button id="startButton">Ввімкнути камеру</button>
+                        <button id="endButton">Вимкнути камеру</button>
+                    </div>
+                        <select id="photoFilter" class="select">
+                            <option value="none">Оригінал</option>
+                            <option value="hue-rotate(90deg)">Hue</option>                                      
+                            <option value="grayscale(100%)">Gray</option>
+                            <option value="blur(15px)">Blur</option>
+                            <option value="sepia(100%)">Sepia</option>
+                            <option value="invert(100%)">Invert</option>
+                            <option value="contrast(150%)">Contrast</option>
+                            <option value="brightness(0.2)">Brightness</option>
+                        </select>
+                        <button id="photoButton" class="btn">Зробити фото</button>
+                        <!-- <button onclick="zoomIn()" id="zoomIner" class="btn">Zoom In</button> -->
+                        <button id="recoButton" class="btn">Розпізнавання облич</button>
+                        <button id="faceButton" class="btn">Деткція облич,точки та емоції</button>
+                        <button id="clearButton" class="btn">Очистити фільтри</button>
+                </div>
+            </div>
+            <div class="photo_container">
+                <div id="photo"></div>
+            </div>
+        </div>
+        
+    </main>
+
+    <!-- <script src="js/opencv.js"></script> -->
+    <script defer src="js/face-api.min.js"></script>
+    <script defer src="js/scripts.js"></script>
+</body>
+
+
+
+</html>

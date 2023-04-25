@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700;800&display=swap");
+
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151519;
+  line-height: 1.6;
+  font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vh;
+  height: 100vh;
+}
+
+.main_container{
+  width: 500px;
+}
+
+
+.select_options{
+  position: absolute;
+}
+
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.select {
+  height: 40px;
+  background: #333;
+  color: #fff;
+  padding: 6px;
+  font-size: 18px;
+  width: 100%;
+  border: 1px #666 solid;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#startButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+#endButton {
+    background-color: #a12424;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0px 0px 10px 196px;
+  }
+
+
+
+canvas{
+  position: absolute;
+  top: 40px;
+  left: 150px;
+}
+
+
+.app{
+  position: absolute;
+  top: 40px;
+  left: 150px;
+}
+
+.photo_container {
+  max-width: 600px;
+  margin: auto;
+  position: absolute;
+  left: 650px;  
+  top: 30px;
+}
+
+#photo{
+  position: relative;
+  right:70px;
+  top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+#photo img {
+  width: 200px;
+  border-radius: 10px;
+}
